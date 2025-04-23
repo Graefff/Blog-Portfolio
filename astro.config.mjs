@@ -1,7 +1,6 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
-import i18n from "@astrojs/i18n";
 
 // https://astro.build/config
 export default defineConfig({
