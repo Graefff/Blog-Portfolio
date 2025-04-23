@@ -12,7 +12,7 @@ export const ui = {
     'nav.about': 'About',
     'nav.404': '404-Not-Found',
   },
-  es: {
+  pt: {
     'nav.index': 'Inicio',
     'nav.about': 'Acerca de',
     'nav.404': '404-No-Encontrado',
