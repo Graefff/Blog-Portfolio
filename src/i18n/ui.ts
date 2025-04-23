@@ -1,9 +1,9 @@
 export const languages = {
   en: 'English',
-  es: 'Español',
+  pt: 'Portuguese',
 };
 
-export const defaultLang = 'en';
+export const defaultLang = 'pt';
 export const showDefaultLang = false;
 
 export const ui = {

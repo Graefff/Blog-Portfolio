@@ -14,7 +14,7 @@ const getPathWithoutLocale = (path: string): string => {
 };
 
 const currentPathWithoutLocale = getPathWithoutLocale(Astro.url.pathname);
-const currentLang = Astro.currentLocale || "pt-BR";
+const currentLang = Astro.currentLocale || "pt";
 const translateLabels = useTranslations(currentLang as keyof typeof languages);
 ---
 

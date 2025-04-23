@@ -1,10 +1,10 @@
 
 import english from '@/i18n/en.json';
-import portuguese from '@/i18n/pt-BR.json';
+import portuguese from '@/i18n/pt.json';
 
 const LANG = {
   ENGLISH: 'en',
-  PORTUGUESE: 'pt-BR',
+  PORTUGUESE: 'pt',
 };
 
 export const getI18N = (
