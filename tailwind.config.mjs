@@ -23,17 +23,16 @@ export default {
 				'hub-border': '#EDEDED',
 				'hub-title': '#121020',
 				'hub-subtitle': '#888888',
-				'hub-background-nav': '#FAFAFA',
-				'hub-inactive': '#B0B0B0',
-				'hub-text': '#000000',
-				'icons': '#6E6E6E',
+				'hub-background-nav': '#4F4F4F',
+				'hub-inactive': '#FFFFFF',
+				'hub-text': '#FFFFFF',
+				'icons': '#000000',
 				// dark
 				'hub-background-dark': '#101419',
 				'hub-border-dark': '#052B2E',
 				'hub-title-dark': '#FFFFFF',
 				'hub-subtitle-dark': '#999999',
 				'hub-background-nav-dark': '#080C11',
-
 
 			},
 			backgroundImage: {
