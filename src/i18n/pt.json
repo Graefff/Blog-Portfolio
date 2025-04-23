@@ -1,69 +1,69 @@
 {
-  "SEO_TITLE": "ItsTeddyDev Hub - Centro de Recursos y Contenidos",
-  "SEO_DESCRIPTION": "Explora libros, artículos, pasatiempos y recursos educativos en el hub personal de Justcoddev. Descubre lo mejor de mi carrera y mis recomendaciones.",
+  "SEO_TITLE": "Hub, Centro de Recursos e Conteúdo",
+  "SEO_DESCRIPTION": "Explora livros, artígos, hobbies e recursos educativos no hub pessoal de Gustavo Souza. Contém alguns detalhes sobre mim, minha carreira e minhas recomendações.",
   "ERROR_404": {
-    "TITLE": "404 - No Encontrado",
-    "DESCRIPTION": "No Encontrado",
-    "BACK_HOMEPAGE_BTN": "Volver"
+    "TITLE": "404 - Não Encontrado",
+    "DESCRIPTION": "Não Encontrado",
+    "BACK_HOMEPAGE_BTN": "Voltar"
   },
   "HERO": {
-    "NAME": "Teddy Summers",
-    "TITLE": "Ingeniero de Software",
-    "DESCRIPTION": "Soy un ingeniero de software que ama aprender y compartir conocimientos. Me apasiona la tecnología, la programación y el desarrollo de software. Siempre estoy buscando nuevos desafíos y oportunidades para crecer."
+    "NAME": "Gustavo Souza",
+    "TITLE": "Analista de Helpdesk",
+    "DESCRIPTION": "Trabalho atualmente como analista de helpdesk e sempre continuo estudando e buscando crescer. Participo de comunidades Self-Hosted e open source e mantenho um pequeno servidor para testes."
   },
   "ABOUT": {
-    "TITLE": "acerca de",
-    "DESCRIPTION": "Acerca de DESCRIPCIÓN"
+    "TITLE": "sobre",
+    "DESCRIPTION": "Sobre a Descrição"
   },
   "NAVBAR": {
-    "PROJECTS": "Projectos",
-    "ARTICLES": "Artículos",
+    "PROJECTS": "Projetos",
+    "ARTICLES": "Artigos",
     "BOOKSMARKS": "Marcadores",
-    "EDUCATION_HUB": "Hub Educativo",
-    "FUN_HOBBIES": "Pasatiempos",
-    "SHOP_NOW": "Comprar Ahora"
+    "EDUCATION_HUB": "Material de Estudo",
+    "FUN_HOBBIES": "Passatempos",
+    "SHOP_NOW": "Comprar Agora"
   },
   "PROJECTS": {
     "empty": {
-      "message": "Vaya, no hay proyectos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Desculpe, não há projetos no momento.",
+      "message2": "Mas não se preocupe, vem novidades por aí!"
     },
     "BADGE": {
-      "NEW": "Nuevo"
+      "NEW": "Novo"
     }
   },
   "ARTICLES": {
     "empty": {
-      "message": "Vaya, no hay artículos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Desculpe, não há projetos no momento.",
+      "message2": "Mas não se preocupe, vem novidades por aí!"
     }
   },
   "BOOKSMARKS": {
     "empty": {
-      "message": "Vaya, no hay marcadores para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Desculpe, não há projetos no momento.",
+      "message2": "Mas não se preocupe, vem novidades por aí!"
     }
   },
   "EDUCATION_HUB": {
     "empty": {
-      "message": "Vaya, no hay recursos educativos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Desculpe, não há projetos no momento.",
+      "message2": "Mas não se preocupe, vem novidades por aí!"
     }
   },
   "FUN_HOBBIES": {
     "empty": {
-      "message": "Vaya, no hay pasatiempos divertidos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Desculpe, não há projetos no momento.",
+      "message2": "Mas não se preocupe, vem novidades por aí!"
     }
   },
   "SHOP_NOW": {
     "empty": {
-      "message": "Vaya, no hay productos para mostrar.",
-      "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Desculpe, não há projetos no momento.",
+      "message2": "Mas não se preocupe, vem novidades por aí!"
     }
   },
   "NOT_DATA": {
-    "message": "Vaya, no hay datos para mostrar.",
-    "message2": "¡Pero no te preocupes, siempre hay algo interesante esperándote!"
+      "message": "Desculpe, não há projetos no momento.",
+      "message2": "Mas não se preocupe, vem novidades por aí!"
   }
 }

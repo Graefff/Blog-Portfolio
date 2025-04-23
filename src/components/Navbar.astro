@@ -5,8 +5,8 @@ import Articles from "./Articles.astro";
 import NavButton from "./index/NavButton.astro";
 import SectionContainer from "./SectionContainer.astro";
 import EducationHub from "./EducationHub.astro";
-import FunHobbies from "./FunHobbies.astro";
-import ShopNow from "./ShopNow.astro";
+// import FunHobbies from "./FunHobbies.astro"; // Comentado
+// import ShopNow from "./ShopNow.astro";     // Comentado
 import { getI18N } from "@/i18n";
 
 //Para cambiar idioma de textos
@@ -15,119 +15,112 @@ const i18n = getI18N({ currentLocale });
 ---
 
 <div class="flex flex-col">
-  <nav
-    class="flex gap-1 text-hub-inactive rounded-full border-[1px] p-[2px] border-hub-border dark:border-hub-border-dark bg-hub-background-nav dark:bg-hub-background-nav whitespace-nowrap overflow-x-auto scrollbar-hide"
-  >
-    <NavButton class="tab-btn" aria-label="btn-projects" data-target="projects"
-      >{i18n.NAVBAR.PROJECTS}</NavButton
-    >
-    <NavButton class="tab-btn" aria-label="btn-Articles" data-target="articles"
-      >{i18n.NAVBAR.ARTICLES}</NavButton
-    >
-    <NavButton
-      class="tab-btn"
-      aria-label="btn-projects"
-      data-target="booksMarks">{i18n.NAVBAR.BOOKSMARKS}</NavButton
-    >
-    <NavButton
-      class="tab-btn"
-      aria-label="btn-projects"
-      data-target="educationHub">{i18n.NAVBAR.EDUCATION_HUB}</NavButton
-    >
-    <NavButton
-      class="tab-btn"
-      aria-label="btn-projects"
-      data-target="funHobbies">{i18n.NAVBAR.FUN_HOBBIES}</NavButton
-    >
-    <NavButton class="tab-btn" aria-label="btn-funHobbies" data-target="shopNow"
-      >{i18n.NAVBAR.SHOP_NOW}</NavButton
-    >
-  </nav>
+	<nav
+		class="flex gap-1 text-hub-inactive rounded-full border-[1px] p-[2px] border-hub-border dark:border-hub-border-dark bg-hub-background-nav dark:bg-hub-background-nav whitespace-nowrap overflow-x-auto scrollbar-hide justify-evenly"
+	>
+		<NavButton
+			class="tab-btn"
+			aria-label="btn-projects"
+			data-target="projects"
+			>{i18n.NAVBAR.PROJECTS}</NavButton
+		>
+		<NavButton
+			class="tab-btn"
+			aria-label="btn-Articles"
+			data-target="articles"
+			>{i18n.NAVBAR.ARTICLES}</NavButton
+		>
+		<NavButton
+			class="tab-btn"
+			aria-label="btn-projects"
+			data-target="booksMarks"
+			>{i18n.NAVBAR.BOOKSMARKS}</NavButton
+		>
+		<NavButton
+			class="tab-btn"
+			aria-label="btn-projects"
+			data-target="educationHub"
+			>{i18n.NAVBAR.EDUCATION_HUB}</NavButton
+		>
+		{/* Comentado: Botão Fun Hobbies */}
+		{/* Comentado: Botão Shop Now */}
+	</nav>
 
-  <main class="mt-6">
-    <SectionContainer id="projects" class="tab-content mt-0 mb-0">
-      <Projects />
-    </SectionContainer>
-    <SectionContainer id="articles" class="tab-content hidden mt-0 mb-0">
-      <Articles />
-    </SectionContainer>
-    <SectionContainer id="booksMarks" class="tab-content hidden mt-0 mb-0">
-      <BooksMarks />
-    </SectionContainer>
-    <SectionContainer id="educationHub" class="tab-content hidden mt-0 mb-0">
-      <EducationHub />
-    </SectionContainer>
-    <SectionContainer id="funHobbies" class="tab-content hidden mt-0 mb-0">
-      <FunHobbies />
-    </SectionContainer>
-    <SectionContainer id="shopNow" class="tab-content hidden mt-0 mb-0">
-      <ShopNow />
-    </SectionContainer>
-  </main>
+	<main class="mt-6">
+		<SectionContainer id="projects" class="tab-content mt-0 mb-0">
+			<Projects />
+		</SectionContainer>
+		<SectionContainer id="articles" class="tab-content hidden mt-0 mb-0">
+			<Articles />
+		</SectionContainer>
+		<SectionContainer id="booksMarks" class="tab-content hidden mt-0 mb-0">
+			<BooksMarks />
+		</SectionContainer>
+		<SectionContainer id="educationHub" class="tab-content hidden mt-0 mb-0">
+			<EducationHub />
+		</SectionContainer>
+		{/* Comentado: Seção Fun Hobbies */}
+		{/* Comentado: Seção Shop Now */}
+	</main>
 </div>
 
 <script>
-  const buttons = document.querySelectorAll(".tab-btn");
-  const contents = document.querySelectorAll(".tab-content");
+	const buttons = document.querySelectorAll(".tab-btn");
+	const contents = document.querySelectorAll(".tab-content"); // Establece el botón activo por defecto
 
-  // Establece el botón activo por defecto
-  const defaultActive = document.querySelector('[data-target="projects"]');
-  if (defaultActive) {
-    defaultActive.classList.add(
-      "bg-hub-background",
-      "drop-shadow-md",
-      "text-hub-title",
-      "font-bold",
-      "dark:text-hub-title-dark",
-      "dark:bg-hub-background-dark",
-    );
-    const projectsSection = document.getElementById("projects");
-    if (projectsSection) {
-      projectsSection.classList.remove("hidden");
-    }
-  }
+	const defaultActive = document.querySelector('[data-target="projects"]');
+	if (defaultActive) {
+		defaultActive.classList.add(
+			"bg-hub-background",
+			"drop-shadow-md",
+			"text-hub-title",
+			"font-bold",
+			"dark:text-hub-title-dark",
+			"dark:bg-hub-background-dark",
+		);
+		const projectsSection = document.getElementById("projects");
+		if (projectsSection) {
+			projectsSection.classList.remove("hidden");
+		}
+	}
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const target = button.getAttribute("data-target");
+	buttons.forEach((button) => {
+		button.addEventListener("click", () => {
+			const target = button.getAttribute("data-target"); // Actualiza el estado de los botones
 
-      // Actualiza el estado de los botones
-      buttons.forEach((btn) =>
-        btn.classList.remove(
-          "bg-hub-background",
-          "drop-shadow-md",
-          "text-hub-title",
-          "font-bold",
-          "dark:text-hub-title-dark",
-          "dark:bg-hub-background-dark",
-        ),
-      );
-      button.classList.add(
-        "bg-hub-background",
-        "drop-shadow-md",
-        "text-hub-title",
-        "font-bold",
-        "dark:text-hub-title-dark",
-        "dark:bg-hub-background-dark",
-      );
+			buttons.forEach((btn) =>
+				btn.classList.remove(
+					"bg-hub-background",
+					"drop-shadow-md",
+					"text-hub-title",
+					"font-bold",
+					"dark:text-hub-title-dark",
+					"dark:bg-hub-background-dark",
+				),
+			);
+			button.classList.add(
+				"bg-hub-background",
+				"drop-shadow-md",
+				"text-hub-title",
+				"font-bold",
+				"dark:text-hub-title-dark",
+				"dark:bg-hub-background-dark",
+			); // Oculta todas las secciones
 
-      // Oculta todas las secciones
-      contents.forEach((content) => content.classList.add("hidden"));
+			contents.forEach((content) => content.classList.add("hidden")); // Muestra la sección seleccionada
 
-      // Muestra la sección seleccionada
-      if (target) {
-        const targetElement = document.getElementById(target);
-        if (targetElement) {
-          targetElement.classList.remove("hidden");
-        }
-      }
+			if (target) {
+				const targetElement = document.getElementById(target);
+				if (targetElement) {
+					targetElement.classList.remove("hidden");
+				}
+			} // Desliza el botón al centro del nav
 
-      // Desliza el botón al centro del nav
-      button.scrollIntoView({
-        behavior: "smooth", // Deslizamiento suave
-        block: "nearest", // Mantiene la posición vertical
-        inline: "center", // Centra horizontalmente
-      });
-    });
-  });
+			button.scrollIntoView({
+				behavior: "smooth", // Deslizamento suave
+				block: "nearest", // Mantiene la posición vertical
+				inline: "center", // Centra horizontalmente
+			});
+		});
+	});
 </script>
