@@ -1,10 +1,10 @@
 
 import english from '@/i18n/en.json';
-import spanish from '@/i18n/es.json';
+import portuguese from '@/i18n/pt-BR.json';
 
 const LANG = {
   ENGLISH: 'en',
-  SPANISH: 'es',
+  PORTUGUESE: 'pt-BR',
 };
 
 export const getI18N = (
@@ -12,6 +12,6 @@ export const getI18N = (
     { currentLocale: string | undefined; }
 ) => {
   if (currentLocale === LANG.ENGLISH) return english
-  if (currentLocale === LANG.SPANISH) return spanish
-  return spanish;
+  if (currentLocale === LANG.PORTUGUESE) return portuguese
+  return portuguese;
 };
