@@ -25,7 +25,7 @@ export default {
 				'hub-subtitle': '#888888',
 				'hub-background-nav': '#FAFAFA',
 				'hub-inactive': '#B0B0B0',
-				'hub-text': '#FFFFFF',
+				'hub-text': '#000000',
 				'icons': '#6E6E6E',
 				// dark
 				'hub-background-dark': '#101419',
