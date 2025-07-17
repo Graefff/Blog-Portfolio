@@ -1,0 +1,112 @@
+---
+import I18nKey from "../i18n/i18nKey";
+import { i18n } from "../i18n/translation";
+import MainGridLayout from "../layouts/MainGridLayout.astro";
+
+const materiais = [
+	{
+		titulo: "Material Para Alunos",
+		descricao:
+			"Slides, executaveis e arquivos relevantes a palestras, workshops e aulas.",
+		link: "https://drive.google.com/drive/folders/1P_-4eLN5RLWvkKx2mnIlN2QaEMN7AUkM?usp=sharing",
+	},
+	{
+		titulo: "Forum Self-Hosted",
+		descricao:
+			"Comunidade do reddit contendo exemplos e cases práticos de uso de serviços open source em infraestrutura própria.",
+		link: "http://reddit.com/r/selfhosted",
+	},
+	{
+		titulo: "Selfh.st",
+		descricao: "Novidades, atualizações e conteúdo sobre Self-hosting.",
+		link: "https://selfh.st/",
+	},
+	{
+		titulo: "DistroWatch",
+		descricao:
+			"Site de index e mantenimento de sistemas operacionais com foco em Linux e BSD.",
+		link: "http://distrowatch.com/",
+	},
+	{
+		titulo: "CloudFlare SpeedTest",
+		descricao:
+			"Teste de velocidade extendido com mais informações relevantes sobre a rede.",
+		link: "https://speed.cloudflare.com/",
+	},
+	{
+		titulo: "ICANN RDAP",
+		descricao:
+			"Protocolo alternativo ao WHOIS, com consulta para obtenção de informações sobre um domínio.",
+		link: "https://speed.cloudflare.com/",
+	},
+	{
+		titulo: "Google Cloud",
+		descricao:
+			"Documentação detalhando tudo que pode ser realizado no tier gratuito do Google Cloud Platform.",
+		link: "https://cloud.google.com/free/docs/free-cloud-features",
+	},
+	{
+		titulo: "Escola Virtual GOV",
+		descricao:
+			"Plataforma de Cursos com certificado gratuito do Governo, com conteúdo por exemplo da Caixa, Anvisa, Microsoft e Banco Central do Brasil",
+		link: "https://www.escolavirtual.gov.br/catalogo",
+	},
+	{
+		titulo: "CursoEmVideo",
+		descricao:
+			"Plataforma de Cursos voltados a área de tecnologia com certificados que custam apenas R$25,00",
+		link: "https://www.cursoemvideo.com/",
+	},
+	{
+		titulo: "Cisco Networking Academy",
+		descricao:
+			"Cursos online gratuitos com foco em Cybersegurança, Redes e Python",
+		link: "https://www.netacad.com/",
+	},
+	{
+		titulo: "Fundação Bradesco",
+		descricao:
+			"Plataforma de Cursos gratuitos de Analise de dados, desenvolvimento pessoal, programação e négocios",
+		link: "https://www.ev.org.br/",
+	},
+	{
+		titulo: "Intelbras ITEC",
+		descricao:
+			"Plataforma de Cursos gratuitos com foco em venda, certificação, gestão e instalação de produtos da marca.",
+		link: "https://cursos.intelbras.com.br/portal/layout/927/intelbras/home.asp?WorkspaceID=1265",
+	},
+	{
+		titulo: "Documentação sobre Virtualização Microsoft",
+		descricao:
+			"Documentaçaõ oficial sobre virtualização em windows server e hyper-v",
+		link: "https://learn.microsoft.com/pt-br/windows-server/virtualization/virtualization",
+	},
+];
+---
+
+<MainGridLayout title="Material de Aula" description="Conteúdos de workshops, aulas e palestras.">
+  <div class="flex w-full rounded-[var(--radius-large)] overflow-hidden relative min-h-32">
+    <div class="card-base z-10 px-9 py-6 relative w-full space-y-6">
+      <div class="prose dark:prose-invert max-w-none mb-4">
+        <h1>Material de Aula</h1>
+        <p>Aqui você encontra recursos e conteúdos usados em minhas palestras, workshops e aulas.</p>
+      </div>
+
+      {materiais.map((item) => (
+  <div class="rounded-xl border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 p-5 shadow-sm transition hover:shadow-md">
+    <h2 class="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">{item.titulo}</h2>
+    <p class="text-sm text-gray-700 dark:text-gray-300 mb-2">{item.descricao}</p>
+    <a
+      class="text-blue-600 hover:underline font-medium"
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Acessar conteúdo →
+    </a>
+  </div>
+))}
+
+    </div>
+  </div>
+</MainGridLayout>

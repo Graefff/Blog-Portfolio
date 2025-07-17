@@ -1,0 +1,11 @@
+---
+import MainGridLayout from "./MainGridLayout.astro";
+---
+<MainGridLayout>
+  <div class="card-base card-shadow p-6 space-y-8">
+    <!-- prose traz toda a tipografia do Markdown igual aos posts -->
+    <article class="prose max-w-none dark:prose-invert">
+      <slot />
+    </article>
+  </div>
+</MainGridLayout>
