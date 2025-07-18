@@ -6,7 +6,7 @@
 
 Blog e portfolio construído com [Astro](https://astro.build) e baseado no [Fuwari](https://fuwari.vercel.app/).
 
-[**Acesse o site**](https://fuwari.vercel.app)
+[**Acesse o site**](https://gustavo-souza.work)
 
 ![Preview Image](src/assets/images/website.png)
 
